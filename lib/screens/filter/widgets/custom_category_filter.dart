@@ -44,15 +44,15 @@ class CustomCategoryFilter extends StatelessWidget {
                       child: Checkbox(
                           value: state.filter.categoryFilters[index].value,
                           onChanged: (bool? newValue) {
-                            context.read<FilterBloc>().add(
-                                  CategoryFilterUpdated(
-                                    categoryFilter: state
-                                        .filter.categoryFilters[index]
-                                        .copyWith(
-                                            value: !state.filter
-                                                .categoryFilters[index].value),
-                                  ),
-                                );
+                            // context.read<FilterBloc>().add(
+                            //       CategoryFilterUpdated(
+                            //         categoryFilter: state
+                            //             .filter.categoryFilters[index]
+                            //             .copyWith(
+                            //                 value: !state.filter
+                            //                     .categoryFilters[index].value),
+                            //       ),
+                            //     );
                           }),
                     )
                   ],
